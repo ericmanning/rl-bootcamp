@@ -47,3 +47,24 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# macOS
+.DS_Store
+
+# Claude
+.claude
+
+# raw inputs
+rl-bootcamp.qmd
+images/*

@@ -1,0 +1,102 @@
+/* ── Google Fonts: Cabin ── */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* ── Base font scale (default 40px → 32px, two levels down) ── */
+:root {
+  --r-main-font-size: 32px;
+}
+
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: 'Cabin', sans-serif;
+}
+
+/* ── Color utility classes (matching original xaringanthemer palette) ── */
+.wine    { color: #64001D; }
+.blue    { color: #003664; }
+.green   { color: #006447; }
+.hotpink { color: #FF0A54; }
+.babypurp { color: #F2EFFE; }
+.lg      { color: #BFD8D1; }
+.yellow  { color: #FFF6B4; }
+.royal   { color: #2800DE; }
+
+/* ── Font-size utility classes ── */
+.large  { font-size: 150%; }
+.normal { font-size: 100%; }
+.small  { font-size:  85%; }
+.tiny   { font-size:  50%; }
+
+/* ── Block-quote callout style ── */
+.blocktext {
+  background-color: #F2EFFE;
+  border-left: 3px solid #2800DE;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 4rem;
+  font-size: 120%;
+}
+
+/* ── Link color ── */
+.reveal a,
+.reveal a:hover {
+  color: #0F2BB4;
+}
+
+/* ── Text alignment ── */
+.center { text-align: center; }
+
+/* ── Slide title position ── */
+.reveal .slides section h1 {
+  margin-top: -1em;
+}
+.reveal .slides section h2 {
+  margin-top: -1em;
+}
+
+.reveal pre {
+  font-size: 1.8rem !important;
+}
+
+.reveal code {
+  font-size: 0.85em !important;
+}
+
+
+
+/* ── Outer layout table for sig-matrix slide: no borders on wrapper only ── */
+table.sig-layout,
+table.sig-layout > tbody > tr,
+table.sig-layout > tbody > tr > td {
+  border: none !important;
+  background: none !important;
+}
+
+/* ── Inner data tables: horizontal row lines only ── */
+#sig-onehot,
+#sig-matrix {
+  border-collapse: collapse !important;
+  border: none !important;
+}
+#sig-onehot th, #sig-onehot td,
+#sig-matrix th, #sig-matrix td {
+  border: none !important;
+  border-bottom: 1px solid currentColor !important;
+  padding: 0.3em 0.6em !important;
+}
+#sig-onehot thead tr:first-child th,
+#sig-matrix thead tr:first-child th {
+  border-top: none !important;
+}
+#sig-onehot .sig-divider {
+  border-left: 1px solid currentColor !important;
+}
+
+/* ── Title slide typography ── */
+#title-slide .title    { font-size: 1.9em; }
+#title-slide .subtitle { font-size: 1.3em; }
+#title-slide .author,
+#title-slide .date     { font-size: 0.75em; }
+
