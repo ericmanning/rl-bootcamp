@@ -1,8 +1,5 @@
 # Record Linkage Bootcamp for Social Science Data
 
-HTML and PDF slides are included in this repo.
+HTML slides in root.
 
-## Demos
-
-## Data
-
+`scripts/` .ipynb demo calls `data/demo.db`
